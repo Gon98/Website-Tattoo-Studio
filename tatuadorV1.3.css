@@ -1,0 +1,73 @@
+
+  .container3{
+    width: 50%;
+    margin: 0 auto;
+  }
+  @keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-webkit-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-moz-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-o-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  
+  .bar{
+    background-color: #EEE;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #FFF;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    margin-top: 3%;
+    font-family: Stencil;
+  }
+  .bar::before{
+    content:  attr(data-skill);
+    background-color: red;
+    display: inline-block;
+    padding: 5px 0 5px 10px;
+    border-radius: inherit;
+    animation: load 2s 0s;
+    -webkit-animation: load 2s 0s;
+    -moz-animation: load 2s 0s;
+    -o-animation: load 2s 0s;
+  }
+  
+ 
+  .bar.back::before{
+    background-color: red;
+  }
+  
+  .bar.learning::before{
+    width: calc(97% - 10px);
+  }
+  .bar.basic::before{
+    width: calc(70% - 10px);
+  }
+  .bar.intermediate::before{
+    width: calc(86% - 10px);
+  }
+ 
+  .text_skill{
+text-align: center;
+font-family: Stencil;
+font-size: 30px;
+color: white;
+padding-top: 5%;
+  }
+
+ 
