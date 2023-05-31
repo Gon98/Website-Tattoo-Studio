@@ -1,4 +1,4 @@
-# Website-Tattoo-Studio
+# Website Tattoo Studio
 Just a fictitious responsive website of a tattoo studio
 
 # Print Screen
